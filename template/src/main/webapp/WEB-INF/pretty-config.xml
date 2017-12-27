@@ -1,0 +1,128 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+<!-- Land page mapping  Land page mapping  Land page mapping  Land page mapping  Land page mapping -->
+	<url-mapping id="login">
+		<pattern value="/inicio" />
+		<view-id value="/login.xhtml" />
+	</url-mapping>
+
+	<url-mapping id="profile">
+		<pattern value="/bienvenido" />
+		<view-id value="/home/profile.xhtml" />
+	</url-mapping>
+<!-- admin module mapping  admin module mapping  admin module mapping  admin module mapping  admin module mapping -->
+	<url-mapping id="priority">
+		<pattern value="/admin/prioridad" />
+		<view-id value="/home/admin/priority/index.xhtml" />
+	</url-mapping>	
+	
+	<url-mapping id="role">
+		<pattern value="/admin/rol" />
+		<view-id value="/home/admin/role/index.xhtml" />
+	</url-mapping>	
+	
+	<url-mapping id="event">
+		<pattern value="/admin/evento" />
+		<view-id value="/home/admin/event/index.xhtml" />
+	</url-mapping>	
+	
+	<url-mapping id="page">
+		<pattern value="/admin/pagina" />
+		<view-id value="/home/admin/page/index.xhtml" />
+	</url-mapping>	
+		
+	<url-mapping id="menu">
+		<pattern value="/admin/menu" />
+		<view-id value="/home/admin/menu/index.xhtml" />
+	</url-mapping>	
+		
+	<url-mapping id="user">
+		<pattern value="/admin/usuario" />
+		<view-id value="/home/admin/user/index.xhtml" />
+	</url-mapping>	
+		
+	<url-mapping id="permission">
+		<pattern value="/admin/permisos" />
+		<view-id value="/home/admin/permission/index.xhtml" />
+	</url-mapping>	
+			
+	<url-mapping id="messageStatus">
+		<pattern value="/admin/estado-mensaje" />
+		<view-id value="/home/admin/messageStatus/index.xhtml" />
+	</url-mapping>	
+				
+	<url-mapping id="uploadedFile">
+		<pattern value="/admin/archivos" />
+		<view-id value="/home/admin/uploadedFile/index.xhtml" />
+	</url-mapping>	
+	
+	<!-- saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro -->
+	<!-- saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro -->
+	<!-- saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro -->
+
+	<url-mapping id="competencia">
+		<pattern value="/psaber/competencia" />
+		<view-id value="/home/psaber/competencia/index.xhtml" />
+	</url-mapping>	
+	
+	<url-mapping id="materia">
+		<pattern value="/psaber/materia" />
+		<view-id value="/home/psaber/materia/index.xhtml" />
+	</url-mapping>
+	
+	<url-mapping id="pregunta">
+		<pattern value="/psaber/pregunta" />
+		<view-id value="/home/psaber/pregunta/index.xhtml" />
+	</url-mapping>
+		
+	<url-mapping id="tema">
+		<pattern value="/psaber/tema" />
+		<view-id value="/home/psaber/tema/index.xhtml" />
+	</url-mapping>	
+		
+	<url-mapping id="area">
+		<pattern value="/psaber/area" />
+		<view-id value="/home/psaber/area/index.xhtml" />
+	</url-mapping>	
+	
+	<url-mapping id="respuesta">
+		<pattern value="/psaber/respuesta" />
+		<view-id value="/home/psaber/respuesta/index.xhtml" />
+	</url-mapping>
+		
+	<url-mapping id="archivoPrueba">
+		<pattern value="/psaber/archivo-prueba" />
+		<view-id value="/home/psaber/archivoPrueba/index.xhtml" />
+	</url-mapping>
+	
+	<url-mapping id="procesarExcel">
+		<pattern value="/psaber/procesar-excel" />
+		<view-id value="/home/psaber/procesarExcel/index.xhtml" />
+	</url-mapping>
+		
+	<url-mapping id="resultadosExamen">
+		<pattern value="/psaber/resultados-usuario" />
+		<view-id value="/home/psaber/resultadoExamen/index.xhtml" />
+	</url-mapping>
+			
+	<url-mapping id="mediaNacionalArea">
+		<pattern value="/psaber/media-nacional-area" />
+		<view-id value="/home/psaber/mediaNacionalArea/index.xhtml" />
+	</url-mapping>
+				
+	<url-mapping id="resultadoGlobalColegio">
+		<pattern value="/psaber/resultado-global-colegio" />
+		<view-id value="/home/psaber/resultadoGlobalColegio/index.xhtml" />
+	</url-mapping>
+	
+	<url-mapping id="tipoInstitucion">
+		<pattern value="/psaber/tipoInstitucion"/>
+		<view-id value="/home/psaber/tipoInstitucion/index.xhtml" />
+	</url-mapping>
+	<!-- saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro  saber pro saber pro -->
+	
+	
+</pretty-config>

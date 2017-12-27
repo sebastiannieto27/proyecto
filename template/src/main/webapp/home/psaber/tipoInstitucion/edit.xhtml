@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition>
+        <p:dialog id="tipoInstitucionEditDlg" widgetVar="tipoInstitucionEditDialog" modal="true" resizable="false"  appendTo="@(body)" header="#{msg.tipoInstitucion}" closeOnEscape="true">
+
+            <h:form id="tipoInstitucionEditForm">
+
+                <h:panelGroup id="display">
+                    <p:panelGrid  columns="2" columnClasses="column" rendered="#{tipoInstitucionController.selected != null}">
+
+
+                        <h:outputLabel value="#{msg.id}" for="tipoInstitucionId" />
+                        <h:outputText id="tipoInstitucionId" value="#{tipoInstitucionController.selected.tipoInstitucionId}" />
+
+                        <p:outputLabel value="#{msg.name}" for="nombre" />
+                        <p:inputText id="nombre" value="#{tipoInstitucionController.selected.nombre}" title="#{msg.name}" required="true" requiredMessage="#{msg.tipoRequiredMessage}" size="45" maxlength="45"/>
+                    </p:panelGrid>
+                    <p:commandButton actionListener="#{tipoInstitucionController.save}" value="#{msg.save}" update="display,:tipoInstitucionListForm:datalist,:growl" oncomplete="handleSubmit(xhr,status,args,PF('tipoInstitucionEditDialog'));">
+                        <p:confirm header="#{msg.confirmation_header}" message="#{msg.confirm_edit_message}" icon="ui-icon-alert"/>
+                    </p:commandButton>
+                    <p:commandButton value="#{msg.cancel}" oncomplete="PF('tipoInstitucionEditDialog').hide()" update="display" process="@this" immediate="true" resetValues="true"/>
+                </h:panelGroup>
+
+            </h:form>
+
+        </p:dialog>
+
+   </ui:composition>
+
+</html>
